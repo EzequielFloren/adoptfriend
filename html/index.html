@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptFriend</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Ruta ajustada -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente de Google -->
+</head>
+<body>
+    <!-- Pop-up de Bienvenida -->
+    <div id="welcome-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>¡Bienvenido a AdoptFriend!</h2>
+            <p>Esta página está diseñada exclusivamente para brindar ayuda a esos amigos que se encuentran perdidos, en situación de calle, lastimados e incluso para encontrarles un hogar.</p>
+            <p>Aquí podrán brindar esa ayuda para aquellos que no tienen voz. Solicitamos la mayor bondad y empatía.</p>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <header class="header-container">
+        <h1>AdoptFriend</h1>    
+    </header>
+
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="verMascotas.html" class="highlight">Ver Mascotas en Adopción</a></li>
+            <li><a href="../darAdopcion" class="highlight">Dar en Adopción</a></li>
+            <li><a href="reportarSituacion.html" class="highlight">Reportar Animal en Situación de Calle</a></li>
+            <li><a href="testimonios.html" class="highlight">Testimonios</a></li>
+            <li><a href="contacto.html" class="highlight">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="info">
+            <h2>Información para Completar el Formulario</h2>
+            <p>Se deberá cargar la siguiente información:</p>
+            <div class="info-box">
+                <div class="info-item">
+                    <h3>Información del Usuario</h3>
+                    <ul>
+                        <li>Nombre y apellido</li>
+                        <li>DNI</li>
+                        <li>Correo electrónico</li>
+                        <li>Red social</li>
+                        <li>Teléfono</li>
+                    </ul>
+                    <p>Con esta información podremos evitar actividades malintencionadas.</p>
+                </div>
+            </div>
+
+            <a href="/darAdopcion" class="btn">Completar Formulario para la Mascota</a>
+            
+            <!-- Imagen debajo del botón -->
+            <img src="../images/header-icon.png" alt="Icono de AdoptFriend" class="footer-icon">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AdoptFriend. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script> <!-- Ruta ajustada -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar en Adopción - AdoptFriend</title>
+    <link rel="stylesheet" href="../css/darAdopcion.css"> <!-- Ruta ajustada -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente de Google -->
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1><a href="/" class="home-link">AdoptFriend</a></h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Formulario para Dar en Adopción</h2>
+            <p>Por favor, complete el siguiente formulario para dar en adopción a su mascota. Todos los campos son obligatorios.</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Información del Usuario</legend>
+                    <label for="name">Nombre y Apellido:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="social">Red Social:</label>
+                    <input type="text" id="social" name="social">
+                    
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Información de la Mascota</legend>
+                    <label for="pet-type">Tipo de Mascota:</label>
+                    <select id="pet-type" name="pet-type" required>
+                        <option value="" disabled selected>Selecciona una opción</option> <!-- Mensaje por defecto -->
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                    
+                    <label for="age">Edad Estimada:</label>
+                    <input type="text" id="age" name="age" required>
+                    
+                    <label for="sex">Sexo:</label>
+                    <select id="sex" name="sex" required>
+                        <option value="" disabled selected>Selecciona una opción</option> <!-- Mensaje por defecto -->
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                    
+                    <label for="size">Tamaño:</label>
+                    <select id="size" name="size" required>
+                        <option value="" disabled selected>Selecciona una opción</option> <!-- Mensaje por defecto -->
+                        <option value="chico">Chico</option>
+                        <option value="mediano">Mediano</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                    
+                    <label for="transit">¿Puede ofrecer tránsito?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="transit" value="sí" required> Sí</label>
+                        <label><input type="radio" name="transit" value="no" required> No</label>
+                    </div>
+                    
+                    <label for="description">Descripción Detallada:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                    
+                    <label for="pet-image">Imagen de la Mascota:</label>
+                    <input type="file" id="pet-image" name="pet-image" accept="image/*">
+                    
+                </fieldset>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+        
+        <section class="image-section">
+            <img src="../images/IconoHeader.jpg" alt="Icono de AdoptFriend" class="footer-icon">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AdoptFriend. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script> <!-- Ruta ajustada -->
+</body>
+</html>

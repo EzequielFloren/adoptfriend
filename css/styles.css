@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #b2dfdb); /* Fondo con gradiente */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el footer esté al final de la página */
+}
+
+/* Estilos del Header */
+header {
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative; /* Hacer que el contenedor sea relativo para posicionar la imagen */
+}
+
+.header-container {
+    position: relative; /* Necesario para que la posición absoluta funcione correctamente */
+    padding: 1em 0;
+    background-color: #00796b; /* Color de fondo del encabezado */
+    color: white;
+    text-align: center;
+}
+
+.header-icon {
+    position: absolute;
+    top: 10px; /* Ajusta este valor para posicionar verticalmente la imagen */
+    right: 10px; /* Ajusta este valor para posicionar horizontalmente la imagen */
+    width: 115px; /* Puedes ajustar el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+h1 {
+    display: inline; /* Asegura que el título y la imagen estén en la misma línea */
+}
+
+/* Estilos del Menú de Navegación */
+nav {
+    background-color: #004d40; /* Verde más oscuro */
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #b2dfdb; /* Color de los enlaces */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover, nav a.highlight {
+    background-color: #00796b; /* Verde más oscuro en hover */
+    color: #ffffff; /* Color del texto en hover */
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #004d40; /* Verde más oscuro */
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    margin-top: auto; /* Asegura que el footer esté al final de la página */
+}
+
+/* Estilos del Contenido Principal */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.info {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.info-item {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    margin: 0.5em;
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-item h3 {
+    margin-top: 0;
+}
+
+.info-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Imagen debajo del botón en la sección info */
+.footer-icon {
+    display: block;
+    margin: 20px auto 0; /* Centra la imagen horizontalmente y añade margen superior */
+    max-width: 100%; /* Ajusta el tamaño de la imagen para que no sea más grande que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos del Pop-up */
+.popup {
+    display: none; /* Ocultar el pop-up por defecto */
+    position: fixed; /* Fijar posición */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+.popup-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px; /* Bordes más redondeados */
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón para cerrar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004d40; /* Verde más oscuro en hover */
+    transform: scale(1.05); /* Efecto de aumento en hover */
+}
